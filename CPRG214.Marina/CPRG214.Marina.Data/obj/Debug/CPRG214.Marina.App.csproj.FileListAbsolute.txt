@@ -1,0 +1,4 @@
+D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.App.csprojAssemblyReference.cache
+D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.App.csproj.CoreCompileInputs.cache
+D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.dll
+D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.pdb
