@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CPRG214.Marina.Data.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CPRG214.Marina.App.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -23,11 +23,14 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link active" runat="server" href="~/">Home</a>
-            <a class="nav-item nav-link" runat="server" href="~/About">About</a>
-            <a class="nav-item nav-link" runat="server" href="~/Contact">Contact</a>
-        </div>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" runat="server" href="~/">Home</a>
+                <a class="nav-item nav-link" runat="server" href="~/About">About</a>
+                <a class="nav-item nav-link" runat="server" href="~/Contact">Contact</a>
+            </div>
+            <div class="navbar-nav">
+                <span id="name" class="nav-item" runat="server"></span>
+            </div>
         </div>
     </nav>
 

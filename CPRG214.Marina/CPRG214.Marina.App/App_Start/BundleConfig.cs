@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Optimization;
 using System.Web.UI;
 
-namespace CPRG214.Marina.Data
+namespace CPRG214.Marina.App
 {
     public class BundleConfig
     {
