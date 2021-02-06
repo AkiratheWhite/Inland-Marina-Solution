@@ -27,9 +27,13 @@
                 <a class="nav-item nav-link" runat="server" href="~/">Home</a>
                 <a class="nav-item nav-link" runat="server" href="~/About">About</a>
                 <a class="nav-item nav-link" runat="server" href="~/Contact">Contact</a>
+                <a class="nav-item nav-link" runat="server" href="~/AvailableSlips">Available Slips</a>
+                <a id="LeaseSlip" class="nav-item nav-link" runat="server" href="~/Secure/LeaseSlip">Lease Slip</a>
             </div>
             <div class="navbar-nav">
                 <span id="name" class="nav-item" runat="server"></span>
+                <a id="register" class="nav-item nav-link" runat="server" href="~/Register">Register Now</a>
+                <a id="login" class="nav-item nav-link" runat="server" onserverclick="OnLoginClick">Login</a>
             </div>
         </div>
     </nav>

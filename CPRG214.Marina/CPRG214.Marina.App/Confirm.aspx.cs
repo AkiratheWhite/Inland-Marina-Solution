@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace CPRG214.Marina.App
+{
+    public partial class Confirm : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //Used for redirection. Redirects to login page after 3 seconds.
+            Response.AddHeader("REFRESH", "3;URL=Login.aspx");
+        }
+    }
+}

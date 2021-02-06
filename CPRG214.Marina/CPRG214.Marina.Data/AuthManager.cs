@@ -8,6 +8,15 @@ namespace CPRG214.Marina.Data
 {
     public class AuthManager
     {
+        /// <summary>
+        /// This method takes user inputted login informatio and compares it against values stored in the database.
+        /// If a match is found, the user is authenticated.
+        /// </summary>
+        /// <param name="FirstName">User inputted first name.</param>
+        /// <param name="LastName">User inputted last name.</param>
+        /// <param name="Phone">User inputted phone number.</param>
+        /// <param name="City">User inputted city.</param>
+        /// <returns>Authentication userDTO with the user's unique ID and full name.</returns>
         public static object Authenticate(string FirstName, string LastName, string Phone, string City)
         {
             userDTO dto = null;
@@ -36,6 +45,18 @@ namespace CPRG214.Marina.Data
                 };
             }
             return dto;
+        }
+
+        /// <summary>
+        /// This method takes a Customer object (as defined by Entity Framework) and adds it to the DataContext.
+        /// The changes are then saved to update the database with a new customer.
+        /// </summary>
+        /// <param name="newCust">Customer object. Can be user defined or generated from a registration control.</param>
+        public static void Add(Customer newCust)
+        {
+            var dbContext = new MarinaEntities(); //Gets a reference to the database entity.
+            dbContext.Customers.Add(newCust); //Adds the new record to the DataContext.
+            dbContext.SaveChanges(); //Saves all changes made in the DataContext to the database it is modelling.
         }
     }
 }

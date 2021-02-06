@@ -13,10 +13,7 @@ namespace CPRG214.Marina.App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(IsPostBack)
-            {
-                ValidationSummary1.HeaderText = "Invalid username/password.";
-            }
+
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
