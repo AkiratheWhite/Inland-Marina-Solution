@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CPRG214.Marina.Data {
+namespace CPRG214.Marina.App {
     
     
     public partial class ViewSwitcher {

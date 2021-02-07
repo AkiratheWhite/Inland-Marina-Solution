@@ -7,7 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace CPRG214.Marina.Data
+namespace CPRG214.Marina.App
 {
     public class Global : HttpApplication
     {

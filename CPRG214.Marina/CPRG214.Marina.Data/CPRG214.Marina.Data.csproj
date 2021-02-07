@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthManager.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>Marina.tt</DependentUpon>
@@ -79,34 +80,33 @@
     <Compile Include="Slip.cs">
       <DependentUpon>Marina.tt</DependentUpon>
     </Compile>
+    <Compile Include="userDTO.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="Marina.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Marina.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="Marina.edmx.diagram">
       <DependentUpon>Marina.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Marina.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Marina.Context.cs</LastGenOutput>
       <DependentUpon>Marina.edmx</DependentUpon>
+      <LastGenOutput>Marina.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Marina.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Marina.edmx</DependentUpon>
       <LastGenOutput>Marina.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CPRG214.Marina.Data.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CPRG214.Marina.App.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -18,16 +18,25 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="/">
+            <img class="img-fluid" src="/Assets/inlandbanner_v3_800x100.jpg"/>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link active" runat="server" href="~/">Home</a>
-            <a class="nav-item nav-link" runat="server" href="~/About">About</a>
-            <a class="nav-item nav-link" runat="server" href="~/Contact">Contact</a>
-        </div>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" runat="server" href="~/">Home</a>
+                <a class="nav-item nav-link" runat="server" href="~/About">About</a>
+                <a class="nav-item nav-link" runat="server" href="~/Contact">Contact</a>
+                <a class="nav-item nav-link" runat="server" href="~/AvailableSlips">Available Slips</a>
+                <a id="LeaseSlip" class="nav-item nav-link" runat="server" href="~/Secure/LeaseSlip">Lease Slip</a>
+            </div>
+            <div class="navbar-nav">
+                <span id="name" class="nav-item" runat="server"></span>
+                <a id="register" class="nav-item nav-link" runat="server" href="~/Register">Register Now</a>
+                <a id="login" class="nav-item nav-link" runat="server" onserverclick="OnLoginClick">Login</a>
+            </div>
         </div>
     </nav>
 

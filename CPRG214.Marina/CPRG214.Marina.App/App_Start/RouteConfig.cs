@@ -4,7 +4,7 @@ using System.Web;
 using System.Web.Routing;
 using Microsoft.AspNet.FriendlyUrls;
 
-namespace CPRG214.Marina.Data
+namespace CPRG214.Marina.App
 {
     public static class RouteConfig
     {

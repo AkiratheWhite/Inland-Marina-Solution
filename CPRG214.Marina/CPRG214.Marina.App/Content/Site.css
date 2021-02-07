@@ -29,3 +29,32 @@ textarea {
         padding: 0;
     }
 }
+
+/*Tony's Custom CSS*/
+
+/* START OF MASTER PAGE*/
+#navbarNav {
+    justify-content: space-between;
+}
+
+#name {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+/* START OF DEFAULT PAGE*/
+.jumbotron {
+    background-image: url(/Assets/marina-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 0; /*Removes the jumbotron's padding and gives it to the child div.*/
+}
+
+.jumbotron-div {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 4rem 2rem; /*Replaces the jumbotron's padding*/
+    border-radius: 0.3rem;
+}

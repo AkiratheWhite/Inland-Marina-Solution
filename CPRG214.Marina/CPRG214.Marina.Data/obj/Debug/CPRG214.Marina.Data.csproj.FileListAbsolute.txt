@@ -1,12 +1,12 @@
+D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\EntityFramework.dll
+D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.csproj.CoreCompileInputs.cache
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\CPRG214.Marina.Data.dll.config
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\CPRG214.Marina.Data.dll
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\CPRG214.Marina.Data.pdb
-D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\EntityFramework.dll
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\EntityFramework.SqlServer.dll
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\EntityFramework.xml
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.csprojAssemblyReference.cache
-D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.csproj.CoreCompileInputs.cache
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.csproj.CopyComplete
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.dll
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.pdb
+D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.csprojAssemblyReference.cache
