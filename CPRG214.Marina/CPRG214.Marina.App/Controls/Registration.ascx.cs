@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using CPRG214.Marina.Data;
@@ -15,6 +16,12 @@ namespace CPRG214.Marina.App.Controls
 
         }
 
+        /// <summary>
+        /// Event handler for when the user clicks the finish button on the wizard.
+        /// Checks to see if the customer record already exists, and if it does not, add the user to the database.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Wizard1_FinishButtonClick(object sender, WizardNavigationEventArgs e)
         {
             //Creates a new customer object from the information entered into the wizard.
@@ -26,11 +33,20 @@ namespace CPRG214.Marina.App.Controls
                 City = txtCity.Text
             };
 
-            //Pass the new customer object to the authentication manager to insert in to DataContext.
-            AuthManager.Add(customer);
+            //Checks to see if the user is already registered. If they are, prevent them from registering again.
+            if (AuthManager.Exists(customer.FirstName, customer.LastName, customer.Phone, customer.City)) {
+                //Model state belongs to the page, not the user control. Have to declare Page.ModelState
+                Page.ModelState.AddModelError("", "A record for this customer already exists. Please sign in with your information.");
+            }
 
-            //Redirect the user to a confirmation page.
-            Response.Redirect("~/Confirm");
+            else
+            {
+                //Pass the new customer object to the authentication manager to insert in to DataContext.
+                AuthManager.Add(customer);
+
+                //Redirect the user to a confirmation page.
+                Response.Redirect("~/Confirm");
+            }
         }
     }
 }

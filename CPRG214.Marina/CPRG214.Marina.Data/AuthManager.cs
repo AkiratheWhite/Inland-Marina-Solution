@@ -58,5 +58,26 @@ namespace CPRG214.Marina.Data
             dbContext.Customers.Add(newCust); //Adds the new record to the DataContext.
             dbContext.SaveChanges(); //Saves all changes made in the DataContext to the database it is modelling.
         }
+
+        public static bool Exists(string FirstName, string LastName, string Phone, string City)
+        {
+            //Assume that on a registration attempt, the user is entering new information
+            bool RecordExists = false;
+
+            //Gets a reference to the database entity.
+            var dbContext = new MarinaEntities();
+
+            //Gets a reference to the object within the Customers table that matches the user specified input fields.
+            var authObj = (from cust in dbContext.Customers
+                           where cust.FirstName == FirstName && cust.LastName == LastName && cust.Phone == Phone && cust.City == City
+                           select cust).SingleOrDefault();
+
+            if (authObj != null)
+            {
+                RecordExists = true;
+            }
+
+            return RecordExists;
+        }
     }
 }

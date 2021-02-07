@@ -15,7 +15,13 @@ namespace CPRG214.Marina.App
         {
 
         }
-
+        /// <summary>
+        /// Event handler for when a user clicks the login button.
+        /// If the user's information exist in the database, authenticate them.
+        /// If the user's information does not match any records in the database, inform them and tell them to try again.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             //Pass user login information to the authentication manager.
