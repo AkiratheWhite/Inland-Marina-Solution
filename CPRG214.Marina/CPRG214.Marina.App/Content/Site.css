@@ -33,6 +33,15 @@ textarea {
 /*Tony's Custom CSS*/
 
 /* START OF MASTER PAGE*/
+body {
+    min-height: calc(100vh - 50px);
+    position: relative;
+}
+
+body > .navbar {
+    padding: 0 2rem;
+}
+
 #navbarNav {
     justify-content: space-between;
 }
@@ -41,6 +50,53 @@ textarea {
     display: block;
     padding: 0.5rem 1rem;
     font-weight: bold;
+}
+
+body > div.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    min-height: calc(100vh - 60px - 50px);
+    background-image: url(/Assets/texture.jpg);
+}
+
+body > div.container-fluid > div:first-child {
+    width: 95%;
+}
+
+form {
+    height: 100%;
+    margin: auto;
+    background-color: rgba(255,255,255,0.8);
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    height: 50px;
+    position: absolute;
+    bottom: -50px;
+}
+
+footer * {
+    margin: auto;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar, footer {
+    background-color: #B0E2FF;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.img-fluid {
+    max-height: 60px;
 }
 
 /* START OF DEFAULT PAGE*/

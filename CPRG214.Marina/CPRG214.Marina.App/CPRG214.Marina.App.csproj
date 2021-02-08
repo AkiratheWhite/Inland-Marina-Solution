@@ -116,6 +116,7 @@
     <Content Include="About.aspx" />
     <Content Include="Assets\inlandbanner_v3_800x100.jpg" />
     <Content Include="Assets\marina-1.jpg" />
+    <Content Include="Assets\texture.jpg" />
     <Content Include="AvailableSlips.aspx" />
     <Content Include="Confirm.aspx" />
     <Content Include="Contact.aspx" />
