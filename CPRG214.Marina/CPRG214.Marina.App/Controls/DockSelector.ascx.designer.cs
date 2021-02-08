@@ -7,29 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CPRG214.Marina.App.Secure
+namespace CPRG214.Marina.App.Controls
 {
 
 
-    public partial class LeaseSlip
+    public partial class DockSelector
     {
 
         /// <summary>
-        /// DockSelector control.
+        /// uxDockSelector control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::CPRG214.Marina.App.Controls.DockSelector DockSelector;
-
-        /// <summary>
-        /// uxDockByID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView uxDockByID;
+        protected global::System.Web.UI.WebControls.DropDownList uxDockSelector;
     }
 }

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CPRG214.Marina.Data;
+using System.Security.Authentication;
+
 
 namespace CPRG214.Marina.Data
 {
@@ -78,6 +81,13 @@ namespace CPRG214.Marina.Data
             }
 
             return RecordExists;
+        }
+
+        public static Slip Find(int dockID)
+        {
+            var db = new MarinaEntities();
+            var auth = db.Slips.SingleOrDefault(a => a.ID == dockID);
+            return auth;
         }
     }
 }

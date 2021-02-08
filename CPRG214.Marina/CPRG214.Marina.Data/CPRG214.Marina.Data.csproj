@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthManager.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="DockManager.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>Marina.tt</DependentUpon>
     </Compile>
