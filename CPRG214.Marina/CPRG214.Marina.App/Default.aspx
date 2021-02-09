@@ -6,7 +6,7 @@
         <div class="jumbotron-div">
             <h1>Your next waterfaring adventure awaits...</h1>
             <p class="lead">Welcome to Inland Marina, located on the south shore Inland Lake, just a short commute from major centers in the south west!</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+            <p><a href="/Register" class="btn btn-primary btn-lg">Register Now &raquo;</a></p>
         </div>
     </div>
 
@@ -32,7 +32,7 @@
                 Our docks and slips can be viewed here.
             </p>
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                <p><a href="/AvailableSlips" class="btn btn-info">View Slips &raquo;</a></p>
             </p>
         </div>
     </div>
