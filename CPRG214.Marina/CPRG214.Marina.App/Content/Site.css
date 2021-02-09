@@ -56,9 +56,8 @@ body > div.container-fluid {
     display: flex;
     justify-content: center;
     align-items: stretch;
-
     min-height: calc(100vh - 60px - 50px);
-    background-image: url(/Assets/texture.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(/Assets/texture.jpg);
 }
 
 body > div.container-fluid > div:first-child {
