@@ -5,5 +5,6 @@ using System.Web;
 
 namespace CPRG214.Marina.App.Controls
 {
-    public delegate void DockSelectionHandler(object sender, DockEventArgs e);
+    public delegate void SlipSelectionHandler(object sender, SlipEventArgs e);
+
 }

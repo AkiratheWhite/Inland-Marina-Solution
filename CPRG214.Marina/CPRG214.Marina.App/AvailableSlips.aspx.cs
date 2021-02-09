@@ -13,32 +13,10 @@ namespace CPRG214.Marina.App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-            
-            var db = new MarinaEntities();
-            var allSlips = db.Slips.ToList();
-            var leaseSlips = db.Leases.ToList();
-            List<Slip> availSlips = new List<Slip>();
-            //checks only for available slips
 
-            foreach (var lease in leaseSlips)
-            {
-                foreach (var slip in allSlips)
-                {
-                    if (slip.ID != lease.SlipID)
-                    {
-                        availSlips.Add(slip);
-                        uxAvailableSlips.DataSource = availSlips;
-                        uxAvailableSlips.DataBind();
-                    }
-                }
-            }
-
-            
-                
-
-
-            
+            List<Slip> availSlip = SlipManager.FindAvailableSlip();
+            uxAvailableSlips.DataSource = availSlip;
+            uxAvailableSlips.DataBind();
 
         }
     }

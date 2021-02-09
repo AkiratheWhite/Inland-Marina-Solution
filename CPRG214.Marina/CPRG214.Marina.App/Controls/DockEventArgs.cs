@@ -5,11 +5,11 @@ using System.Web;
 
 namespace CPRG214.Marina.App.Controls
 {
-    public class DockEventArgs: EventArgs
+    public class DockEventArgs :EventArgs 
     {
         public int ID { get; set; }
-        public int Width { get; set; }
-        public int Length { get; set; }
-        public int DockID { get; set; }
+        public string Name { get; set; }
+        public bool WaterService { get; set; }
+        public bool ElectricalService { get; set; }
     }
 }

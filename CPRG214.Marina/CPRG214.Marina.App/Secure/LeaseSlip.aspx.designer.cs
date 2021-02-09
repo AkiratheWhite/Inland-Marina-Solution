@@ -24,12 +24,39 @@ namespace CPRG214.Marina.App.Secure
         protected global::CPRG214.Marina.App.Controls.DockSelector DockSelector;
 
         /// <summary>
-        /// uxDockByID control.
+        /// uxAvailSlipSortedByDock1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView uxDockByID;
+        protected global::System.Web.UI.WebControls.GridView uxAvailSlipSortedByDock1;
+
+        /// <summary>
+        /// uxSelectedSlip control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView uxSelectedSlip;
+
+        /// <summary>
+        /// btnLease control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLease;
+
+        /// <summary>
+        /// uxPreviouslyLeased control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView uxPreviouslyLeased;
     }
 }

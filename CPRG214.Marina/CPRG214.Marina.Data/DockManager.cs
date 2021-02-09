@@ -16,6 +16,13 @@ namespace CPRG214.Marina.Data
             return dockName;
 
         }
-       
+        public static Dock Find(int dockID)
+        {
+            var db = new MarinaEntities();
+            var dock = db.Docks.SingleOrDefault(d => d.ID == dockID);
+            return dock;
+        }
+
+
     }
 }

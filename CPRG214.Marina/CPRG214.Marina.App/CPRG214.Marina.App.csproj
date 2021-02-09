@@ -308,6 +308,8 @@
     <Compile Include="Controls\Registration.ascx.designer.cs">
       <DependentUpon>Registration.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SlipEventArgs.cs" />
+    <Compile Include="Controls\SlipSelectionHandler.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -398,6 +400,9 @@
       <Project>{482fbf89-b642-4f8e-abf6-ebf8dbdc7004}</Project>
       <Name>CPRG214.Marina.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -17,8 +17,8 @@ C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\EntityFra
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\EntityFramework.SqlServer.dll
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\EntityFramework.xml
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.csprojAssemblyReference.cache
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.csproj.CoreCompileInputs.cache
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.csproj.CopyComplete
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.dll
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.pdb
+C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.Data\obj\Debug\CPRG214.Marina.Data.csprojAssemblyReference.cache

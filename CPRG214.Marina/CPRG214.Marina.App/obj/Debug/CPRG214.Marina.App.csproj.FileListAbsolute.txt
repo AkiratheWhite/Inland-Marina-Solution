@@ -79,6 +79,9 @@ D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Mar
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\CPRG214.Marina.App.pdb
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\obj\Debug\CPRG214.Marina.App.dll
 D:\Users\Tony\Documents\GitHub\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\obj\Debug\CPRG214.Marina.App.pdb
+C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\obj\Debug\CPRG214.Marina.App.csprojAssemblyReference.cache
+C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\obj\Debug\CPRG214.Marina.App.csproj.CoreCompileInputs.cache
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\CPRG214.Marina.App.dll.config
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\CPRG214.Marina.App.dll
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\CPRG214.Marina.App.pdb
@@ -95,7 +98,6 @@ C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\roslyn\Microsoft
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\roslyn\Microsoft.Managed.Core.targets
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\roslyn\Microsoft.VisualBasic.Core.targets
@@ -155,8 +157,6 @@ C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\Newtonsoft.Json.
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\Antlr3.Runtime.pdb
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\obj\Debug\CPRG214.Marina.App.csprojAssemblyReference.cache
-C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\obj\Debug\CPRG214.Marina.App.csproj.CoreCompileInputs.cache
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\obj\Debug\CPRG214.Marina.App.csproj.CopyComplete
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\obj\Debug\CPRG214.Marina.App.dll
 C:\Inland-Marina-Solution\CPRG214.Marina\CPRG214.Marina.App\obj\Debug\CPRG214.Marina.App.pdb

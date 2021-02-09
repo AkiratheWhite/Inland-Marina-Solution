@@ -83,11 +83,6 @@ namespace CPRG214.Marina.Data
             return RecordExists;
         }
 
-        public static Slip Find(int dockID)
-        {
-            var db = new MarinaEntities();
-            var auth = db.Slips.SingleOrDefault(a => a.ID == dockID);
-            return auth;
-        }
+      
     }
 }

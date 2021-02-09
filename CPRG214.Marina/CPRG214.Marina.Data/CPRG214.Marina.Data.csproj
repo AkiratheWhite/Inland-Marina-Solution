@@ -51,16 +51,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthManager.cs" />
-    <Compile Include="DockManager.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>Marina.tt</DependentUpon>
     </Compile>
     <Compile Include="Dock.cs">
       <DependentUpon>Marina.tt</DependentUpon>
     </Compile>
+    <Compile Include="DockManager.cs" />
     <Compile Include="Lease.cs">
       <DependentUpon>Marina.tt</DependentUpon>
     </Compile>
+    <Compile Include="LeaseManager.cs" />
     <Compile Include="Marina.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -80,6 +81,7 @@
     <Compile Include="Slip.cs">
       <DependentUpon>Marina.tt</DependentUpon>
     </Compile>
+    <Compile Include="SlipManager.cs" />
     <Compile Include="userDTO.cs" />
   </ItemGroup>
   <ItemGroup>

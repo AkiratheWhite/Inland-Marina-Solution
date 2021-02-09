@@ -10,8 +10,17 @@ namespace CPRG214.Marina.App.Controls
 {
     public partial class DockSelector : System.Web.UI.UserControl
     {
+
         //declare the event
         public event DockSelectionHandler DockSelect;
+       
+        public Slip slip { get; set; }
+
+        public bool AllowPostBack
+        {
+            get { return uxDockSelector.AutoPostBack; }
+            set { uxDockSelector.AutoPostBack = value; }
+        }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,23 +31,29 @@ namespace CPRG214.Marina.App.Controls
                 uxDockSelector.DataTextField = "Name";
                 uxDockSelector.DataValueField = "ID";
                 uxDockSelector.DataBind();
+                uxDockSelector.SelectedIndex = 0;
+                uxDockSelector_SelectedIndexChanged(this, e);
             }
         }
 
         protected void uxDockSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //the event is invoked here
             if (DockSelect != null)
             {
-                //retrieve ID from drop down menu 
-                var id = Convert.ToInt32(uxDockSelector.SelectedValue);
+                var dockID = Convert.ToInt32(uxDockSelector.SelectedValue);
+                Dock dock = DockManager.Find(dockID);
+                var arg = new DockEventArgs
+                {
+                    ID = dock.ID,
+                    Name = dock.Name,
+                    WaterService = dock.WaterService,
+                    ElectricalService = dock.ElectricalService
 
-                //call manager class to retrieve slip
+                };
+                DockSelect.Invoke(this, arg);
 
-                //set the state of the form
             }
-        
-
+            
         }
     }
 }
