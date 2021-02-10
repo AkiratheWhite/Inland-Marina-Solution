@@ -41,38 +41,39 @@ namespace CPRG214.Marina.App.Secure
             }
         }
 
-        protected void uxAvailSlipSortedByDock1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void uxAvailSlipSortedByDock1_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            Slip selectedSlip = buildSelectedSlip();
+            addSelectedSlipToDatabase(selectedSlip);
+
+            addToLeasManager(selectedSlip.ID);
+            Response.Redirect(Request.RawUrl.ToString());
+        }
+
+        private void addToLeasManager(int selectedSlipId)
+        {
+            int slipID = Convert.ToInt32(selectedSlipId);
+            int custID = Convert.ToInt32(Session["custID"]);
+
+            LeaseManager.Add(slipID, custID);
+        }
+
+        private Slip buildSelectedSlip()
         {
             Slip selectedSlip = new Slip();
+
             selectedSlip.ID = Convert.ToInt32(uxAvailSlipSortedByDock1.SelectedRow.Cells[1].Text);
             selectedSlip.Width = Convert.ToInt32(uxAvailSlipSortedByDock1.SelectedRow.Cells[2].Text);
             selectedSlip.Length = Convert.ToInt32(uxAvailSlipSortedByDock1.SelectedRow.Cells[3].Text);
             selectedSlip.DockID = Convert.ToInt32(uxAvailSlipSortedByDock1.SelectedRow.Cells[4].Text);
-            selectedSlipList = (List<Slip>)Session["leaseslip"];
-            selectedSlipList.Add(selectedSlip);
-            //uxSelectedSlip.DataSource = selectedSlipList;
-            //uxSelectedSlip.DataBind();
-            Lease lease = new Lease();
-            int slipID = Convert.ToInt32(selectedSlip.ID);
-            int custID = Convert.ToInt32(Session["custID"]);
-            LeaseManager.Add(slipID, custID);
-            Response.Redirect(Request.RawUrl.ToString());
 
+            return selectedSlip;
         }
 
-        //protected void btnLease_Click(object sender, EventArgs e)
-        //{
-        //   // MarinaEntities dbContext = new MarinaEntities();
-
- 
-        //    for (int i = 0; i < uxSelectedSlip.Rows.Count; i++)
-        //    {
-        //        Lease lease = new Lease();
-        //        int slipID = Convert.ToInt32(uxSelectedSlip.Rows[i].Cells[0].Text);
-        //        int custID = Convert.ToInt32(Session["custID"]);
-        //        LeaseManager.Add(slipID, custID);
-        //        Response.Redirect(Request.RawUrl.ToString());
-        //    }
-        //}
+        private void addSelectedSlipToDatabase(Slip selectedSlip)
+        {
+            selectedSlipList = (List<Slip>)Session["leaseslip"];
+            selectedSlipList.Add(selectedSlip);
+        }
     }
 }
