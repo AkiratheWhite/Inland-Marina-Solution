@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 using CPRG214.Marina.Data;
 using CPRG214.Marina.App.Controls;
@@ -32,13 +29,16 @@ namespace CPRG214.Marina.App.Secure
         {
             var dockID = e.ID;
             var availableSlips = SlipManager.FindAvailableSlipByDock(dockID);
+
+            uxAvailSlipSortedByDock1.DataSource = availableSlips;
+            uxAvailSlipSortedByDock1.DataBind();
+
             foreach (GridViewRow row in uxAvailSlipSortedByDock1.Rows)
             {
                 LinkButton lb = (LinkButton)row.Cells[0].Controls[0];
                 lb.Text = "Lease";
+
             }
-            uxAvailSlipSortedByDock1.DataSource = availableSlips;
-            uxAvailSlipSortedByDock1.DataBind();
         }
 
         protected void uxAvailSlipSortedByDock1_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,19 +60,19 @@ namespace CPRG214.Marina.App.Secure
 
         }
 
-        protected void btnLease_Click(object sender, EventArgs e)
-        {
-           // MarinaEntities dbContext = new MarinaEntities();
+        //protected void btnLease_Click(object sender, EventArgs e)
+        //{
+        //   // MarinaEntities dbContext = new MarinaEntities();
 
  
-            for (int i = 0; i < uxSelectedSlip.Rows.Count; i++)
-            {
-                Lease lease = new Lease();
-                int slipID = Convert.ToInt32(uxSelectedSlip.Rows[i].Cells[0].Text);
-                int custID = Convert.ToInt32(Session["custID"]);
-                LeaseManager.Add(slipID, custID);
-                Response.Redirect(Request.RawUrl.ToString());
-            }
-        }
+        //    for (int i = 0; i < uxSelectedSlip.Rows.Count; i++)
+        //    {
+        //        Lease lease = new Lease();
+        //        int slipID = Convert.ToInt32(uxSelectedSlip.Rows[i].Cells[0].Text);
+        //        int custID = Convert.ToInt32(Session["custID"]);
+        //        LeaseManager.Add(slipID, custID);
+        //        Response.Redirect(Request.RawUrl.ToString());
+        //    }
+        //}
     }
 }

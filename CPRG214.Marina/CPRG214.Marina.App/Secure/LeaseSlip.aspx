@@ -7,40 +7,41 @@
     <br />
     <br />
 
-    <h4>Currently available</h4>
-    <table>
-        <tr>
-            <td>Choose a dock:  </td>
-            <td>
-        <uc1:DockSelector runat="server" ID="DockSelector" AllowPostBack="True" />
-            </td>
-        </tr>
-    </table>
+    <div class="mb-4">
+        <h4>Currently available</h4>
+        <div class="d-inline">
+            <div class="d-inline">Choose a dock: </div>
+            <div class="d-inline">
+                <uc1:DockSelector runat="server" ID="DockSelector" AllowPostBack="True" />
+            </div>
+        </div>
+    </div>
 
-    </br>
-    <p>Available Slips for Lease</p>
-    <asp:GridView ID="uxAvailSlipSortedByDock1" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="869px" AutoGenerateSelectButton="True" OnSelectedIndexChanged="uxAvailSlipSortedByDock1_SelectedIndexChanged">
-        <AlternatingRowStyle BackColor="#CCCCCC" />
-        <FooterStyle BackColor="#CCCCCC" />
-        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
-        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
-        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
-        <SortedAscendingCellStyle BackColor="#F1F1F1" />
-        <SortedAscendingHeaderStyle BackColor="#808080" />
-        <SortedDescendingCellStyle BackColor="#CAC9C9" />
-        <SortedDescendingHeaderStyle BackColor="#383838" />
+    <h5>Available Slips for Lease</h5>
+    <asp:GridView 
+        class="styled-table mx-auto w-75 mb-6" 
+        ID="uxAvailSlipSortedByDock1" 
+        runat="server" 
+        AutoGenerateSelectButton="True" 
+        AutoGenerateColumns="false"> 
+
+        <Columns>
+            <asp:BoundField DataField="ID" HeaderText="Purchase Number" />
+            <asp:BoundField DataField="Width" HeaderText="Width of Dock" />
+            <asp:BoundField DataField="Length" HeaderText="Length of Dock" />
+        </Columns>
+    </asp:GridView>
+     
+    <h5>Previously Leased</h5>
+    <asp:GridView class="styled-table mx-auto w-75" AutoGenerateColumns="false" ID="uxPreviouslyLeased" runat="server">
+        <Columns>
+            <asp:BoundField DataField="ID" HeaderText="Purchase Number" />
+            <asp:BoundField DataField="SlipID" HeaderText="Slip ID" />
+        </Columns>
     </asp:GridView>
     
-    </br>
-    <p >Selected Slips</p>
-     <asp:GridView ID="uxSelectedSlip" runat="server"></asp:GridView>   
-    <asp:Button ID="btnLease" runat="server" Text="Lease" OnClick="btnLease_Click" />
-    
-    
-        <p>Previously Leased</p>
-    <asp:GridView ID="uxPreviouslyLeased" runat="server" ></asp:GridView>
-    
-    
+
+
 
 
 

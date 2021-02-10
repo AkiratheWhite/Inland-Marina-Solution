@@ -1,15 +1,26 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AvailableSlips.aspx.cs" Inherits="CPRG214.Marina.App.AvailableSlips" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:GridView class="table" ID="uxAvailableSlips" runat="server" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Horizontal">
-        <AlternatingRowStyle BackColor="#F7F7F7" />
-        <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
-        <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
-        <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
-        <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
-        <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
-        <SortedAscendingCellStyle BackColor="#F4F4FD" />
-        <SortedAscendingHeaderStyle BackColor="#5A4C9D" />
-        <SortedDescendingCellStyle BackColor="#D8D8F0" />
-        <SortedDescendingHeaderStyle BackColor="#3E3277" />
+
+    <div>
+        <h3>Available Slips</h3>
+        <p>Register or login to lease a slip. Happy sailing!</p>
+    </div>
+    
+
+    <asp:GridView 
+        class="styled-table mx-auto w-75" 
+        ID="uxAvailableSlips" 
+        runat="server"
+        AutoGenerateColumns="false"> 
+
+        <Columns>
+            <asp:BoundField DataField="ID" HeaderText="Purchase Number" />
+            <asp:BoundField DataField="Width" HeaderText="Width of Dock" />
+            <asp:BoundField DataField="Length" HeaderText="Length of Dock" />
+        </Columns>
     </asp:GridView>
+
 </asp:Content>
+
+
+
