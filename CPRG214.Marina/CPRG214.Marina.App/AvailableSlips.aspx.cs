@@ -13,7 +13,7 @@ namespace CPRG214.Marina.App
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //displays all available slips onto grid view.
             List<Slip> availSlip = SlipManager.FindAvailableSlip();
             uxAvailableSlips.DataSource = availSlip;
             uxAvailableSlips.DataBind();

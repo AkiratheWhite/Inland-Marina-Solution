@@ -8,7 +8,14 @@ namespace CPRG214.Marina.Data
 {
     public class LeaseManager
     {
-
+        /// <summary>
+        /// Adds new lease to database
+        /// </summary>
+        /// <param name="slipID"></param>
+        /// <param name="custID"></param>
+        /// Code written by Julie Tran 
+        /// Modifed by Tony Li
+        //Last Modified Febuary 9 2021
         public static void Add(int slipID, int custID)
         {
             var db = new MarinaEntities();
@@ -30,6 +37,12 @@ namespace CPRG214.Marina.Data
             db.SaveChanges();
         }
 
+        /// <summary>
+        /// Finds all lease associated to customer that is logged in
+        /// </summary>
+        /// <param name="custID">customer ID</param>
+        /// Code written by Julie Tran
+        //Last Modified Febuary 8 2021
         public static List<Lease> Find(int custID)
         {
             var db = new MarinaEntities();

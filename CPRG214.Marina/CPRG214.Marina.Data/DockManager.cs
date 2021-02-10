@@ -9,6 +9,13 @@ namespace CPRG214.Marina.Data
 {
     public class DockManager
     {
+        //Code written by Julie Tran
+        //Last Modified Febuary 7 2021
+
+        /// <summary>
+        /// retrieves all Dock Name and Dock ID
+        /// </summary>
+        /// <returns></returns>
         public IList GetAllAsListItem()
         {
             var db = new MarinaEntities();
@@ -16,6 +23,11 @@ namespace CPRG214.Marina.Data
             return dockName;
 
         }
+        /// <summary>
+        /// retrieves dock by ID
+        /// </summary>
+        /// <param name="dockID">dock ID</param>
+        /// <returns></returns>
         public static Dock Find(int dockID)
         {
             var db = new MarinaEntities();
