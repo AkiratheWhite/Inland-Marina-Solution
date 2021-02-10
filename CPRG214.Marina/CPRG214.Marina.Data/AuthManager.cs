@@ -9,6 +9,10 @@ using System.Security.Authentication;
 
 namespace CPRG214.Marina.Data
 {
+    /***
+     * Code written by: Tony Li
+     * Last Modified (MM/DD/YY): 02/09/21 
+     ***/
     public class AuthManager
     {
         /// <summary>
@@ -62,6 +66,14 @@ namespace CPRG214.Marina.Data
             dbContext.SaveChanges(); //Saves all changes made in the DataContext to the database it is modelling.
         }
 
+        /// <summary>
+        /// Method to check if a user already exists in the database. Prevents duplicate entries of customers.
+        /// </summary>
+        /// <param name="FirstName">User inputted first name.</param>
+        /// <param name="LastName">User inputted last name.</param>
+        /// <param name="Phone">User inputted phone number.</param>
+        /// <param name="City">User inputted city.</param>
+        /// <returns></returns>
         public static bool Exists(string FirstName, string LastName, string Phone, string City)
         {
             //Assume that on a registration attempt, the user is entering new information
@@ -75,9 +87,10 @@ namespace CPRG214.Marina.Data
                            where cust.FirstName == FirstName && cust.LastName == LastName && cust.Phone == Phone && cust.City == City
                            select cust).SingleOrDefault();
 
+            //If the LINQ query returns an object, the user must already exist within the database.
             if (authObj != null)
             {
-                RecordExists = true;
+                RecordExists = true; //Set the boolean to true, so that the user control denies the registration attempt.
             }
 
             return RecordExists;

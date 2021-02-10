@@ -8,6 +8,10 @@ using System.Web.UI.WebControls;
 
 namespace CPRG214.Marina.App
 {
+    /***
+     * Code written by: Tony Li
+     * Last Modified (MM/DD/YY): 02/09/21 
+     ***/
     public partial class SiteMaster : MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)

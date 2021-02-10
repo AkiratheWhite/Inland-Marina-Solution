@@ -9,6 +9,10 @@ using CPRG214.Marina.Data;
 
 namespace CPRG214.Marina.App.Controls
 {
+    /***
+     * Code written by: Tony Li
+     * Last Modified (MM/DD/YY): 02/09/21 
+     ***/
     public partial class Registration : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
